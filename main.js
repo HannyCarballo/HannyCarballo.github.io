@@ -5,9 +5,10 @@ let typewriter = new Typewriter(app, {
   delay: 75,
 });
  
+const text = "Soy estudiante de Ingeniería en Computación, <br>además poseo una formación técnica en el área de informática.";
 typewriter
   .pauseFor(2500)
-  .typeString('Desarrollo sitios web y escribo artículos sobre programación.')
+  .typeString(text)
   .pauseFor(200)
   .deleteChars(10)
   .start();
