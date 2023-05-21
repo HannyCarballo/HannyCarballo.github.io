@@ -30,6 +30,10 @@
       .parrafo-ampliado {
         display: none;
       }
+      .link-estilizado {
+        color: black; /* Color del texto del enlace (negro) */
+        text-decoration-color: #cf508c; /* Color del subrayado del enlace */
+      }
     </style>
     <script>
       function ampliarParrafo() {
@@ -44,7 +48,7 @@
           parrafoAmpliado.style.display = "block";
         }
       }
-    </script>
+    </script>  
   </head>
   <body>
     <!-- Barra de navegacion -->
@@ -83,7 +87,7 @@
         <!--<h2>Soy estudiante de Ingeniería en Computación, <br>además poseo una formación técnica en el área de informática.</h2>-->
 
         <!--Animación con JavaScript-->
-        <h2 class="text-primary mb-4" id="typewriter"></h2>
+        <h2 style="color: #cf508c; font-style: italic;" class="mb-4" id="typewriter"></h2>
       </div>
       <div class="hero-inferior">
         <img class="hero-inferior-imagen img-fluid" src="https://media.giphy.com/media/M4NykXxUE0HAcK7UJ6/giphy.gif" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React." width="300">
@@ -94,7 +98,7 @@
     <section id="sobre-mi" class="sobre-mi seccion-oscura">
       <div class="contenedor">
         <h2 class="seccion-titulo">Conoce a Hanny Carballo</h2>
-        <p class="seccion-texto">
+        <p style="font-style: italic" class="seccion-texto">
           Soy Hanny, una estudiante de Ingeniería en Computación con una sólida formación técnica en el campo de la computación. Me apasiona el aprendizaje constante y me siento atraída por el mundo de la programación, así como por los lenguajes de marcado como HTML y CSS.
           <br>
           <br>
@@ -116,9 +120,9 @@
             <p class="experiencia-titulo">Estudiante</p>
             <p>Estudiante de cuarto semestre de Ingeniería en Computación y poseo un Estudio Técnico Especializado en Computación. Realicé mi servicio social durante 6 meses en la Dirección General de Televisión Universitaria. </p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-primary">Programación</span>
-              <span class="badge text-bg-primary">Desarrollo Web</span>
-              <span class="badge text-bg-primary">Ingeniería</span>
+              <span style="background-color: #0fffdb; color:black" class="badge">Programación</span>
+              <span style="background-color: #0fffdb; color:black" class="badge">Desarrollo Web</span>
+              <span style="background-color: #0fffdb; color:black" class="badge">Ingeniería</span>
             </div>
           </div>
           <!-- Desarrollo Web -->
@@ -136,10 +140,10 @@
               Haz clic para volver al párrafo corto.
             </p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-primary">HTML</span>
-              <span class="badge text-bg-primary">CSS</span>
-              <span class="badge text-bg-primary">JavaScript</span>
-              <span class="badge text-bg-primary">Node JS</span>
+              <span style="background-color: #0fffdb; color:black" class="badge">HTML</span>
+              <span style="background-color: #0fffdb; color:black" class="badge">CSS</span>
+              <span style="background-color: #0fffdb; color:black" class="badge">JavaScript</span>
+              <span style="background-color: #0fffdb; color:black" class="badge">Node JS</span>
             </div>
           </div>
           <!-- Embajadora -->
@@ -152,9 +156,9 @@
               He impartido cursos sobre creación de páginas web y robótica con arduino. En los cursos he enseñado sobre HTML, CSS, robótica, programación y modelo de negocios. He estado a cargo de cinco grupos, lo que suma un poco más de 80 alumnas.
             </p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-primary">Motivar</span>
-              <span class="badge text-bg-primary">STEM</span>
-              <span class="badge text-bg-primary">Enseñar</span>
+              <span style="background-color: #0fffdb; color:black" class="badge">Motivar</span>
+              <span style="background-color: #0fffdb; color:black" class="badge">STEM</span>
+              <span style="background-color: #0fffdb; color:black" class="badge">Enseñar</span>
             </div>
           </div>
         </div>
@@ -273,7 +277,7 @@
         </div>
       </div>
       <a href="https://github.com/HannyCarballo?tab=repositories" target="_blank" rel="noopener noreferrer">
-        <button type="button" class="btn btn-info">
+        <button type="button" style="background-color: #0fffdb; color:black" class="btn btn-info">
           Ver más proyectos
           <i class="bi bi-arrow-right-circle-fill"></i>
         </button>
@@ -288,7 +292,7 @@
           Recientes
         </div>
         <ul class="list-group list-group-flush">
-          <a href="https://nancypacheco4.wixsite.com/website-2/post/hanny" target="_blank" rel="noopener noreferrer">
+          <a href="https://nancypacheco4.wixsite.com/website-2/post/hanny" target="_blank" rel="noopener noreferrer" class="link-estilizado">
             <li class="list-group-item">
               Mi experiencia en los concursos de mujeres en programación
             </li>
@@ -357,7 +361,7 @@
             <div class="col-12 col-md-4 seccion-titulo">
               ¡Hablemos!
             </div>
-            <div class="col-12 col-md-4 descripcion">
+            <div class="col-12 col-md-4 descripcion" style="font-style: italic;">
               Si estás interesada en colaborar en un proyecto relacionado con el desarrollo web, no dudes en contactarme.          
             </div>
             <div class="col-12 col-md-4">
@@ -376,7 +380,7 @@
     <!-- Pie de pagina (footer) -->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
       <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
-      <p class="footer-texto text-center">El código es poesía <br>en movimiento.</p>
+      <p class="footer-texto text-center" style="font-family: 'Dancing Script', cursive; font-size: 40px;">El código es poesía <br>en movimiento.</p>
       <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
         <a href="https://twitter.com/CarballoHanny" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-twitter"></i>
